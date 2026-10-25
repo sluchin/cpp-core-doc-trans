@@ -1,6 +1,6 @@
 # cpp-core-doc-trans
 
-C++ Core Guidelines (https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines 。元はリポジトリ [isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines) の Markdown) を**開いたときに** 取得して、日本語に翻訳して表示するアプリです (事前に翻訳したものはありません)。「原文に戻す」で、英語に戻せます。PC (Linux, Windows, macOS) と Android で動きます。
+C++ Core Guidelines (https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines 。元はリポジトリ [isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines) の Markdown) を**開いたときに** 取得して、日本語に翻訳して表示するアプリです (事前に翻訳したものはありません)。メニュー (☰) の「原文」で、英語に戻せます。PC (Linux, Windows, macOS) と Android で動きます。
 
 - **Tauri 2** (Rust) + **React** (TypeScript)。
 - 翻訳のサービスは設定で選びます。**Google Cloud Translation** (Basic, v2)、**Gemini API**、**ML Kit** (Android のみ。端末の中で翻訳。オフライン)、**Google 翻訳 (無料)** (キー不要。非公式の入口)。API キーは使う人が自分のものをアプリの設定に入れます (キーはアプリに含めません)。
@@ -25,12 +25,12 @@ C++ Core Guidelines (https://isocpp.github.io/CppCoreGuidelines/CppCoreGuideline
 
 ## 使い方
 
-1. アプリを起動します。既定は無料の Google 翻訳で、キーなしで、すぐに使えます。ほかのサービスを使うときは、右上の ⚙ から、翻訳のサービスを選んで、API キーを入れます (ML Kit はキーが要りません)。
+1. アプリを起動します。既定は無料の Google 翻訳で、キーなしで、すぐに使えます。ほかのサービスを使うときは、左上の ☰ のメニューの ⚙ から、翻訳のサービスを選んで、API キーを入れます (ML Kit はキーが要りません)。
 2. 最初の章 (表紙と目次) が開きます。リンクを押すと、その章を開いて、翻訳して表示します。
 3. 左上の ☰ で**メニュー (ナビゲーションドロワー)** を開きます。メニュー (目次) は、章、節、規則の見出しから作ります (全体が最初から、そろいます)。日本語の表示のときは開いたときに、項目の名前も翻訳します (キャッシュされます)。項目を押すと、その章の、その規則へ移ります。
 4. **読んだ場所**: 右端にスクロールバーを出します。つまみを押して動かすと、つまみの横に今の章の、読み進めた場所 / 章全体 (「3 / 12 画面 (25%)」) が出ます。最後に開いた章と、章ごとの読んだ位置を端末に覚えて、次の起動で戻します。
 5. **トップとしおり**: ツールバーの ⌂ で、最初の章に戻ります。☆ で今の章にしおりを付けて、メニューの「しおり」から開きます (外すのは ✕)。
-6. 「原文に戻す」で英語、「日本語に翻訳」で、もう一度日本語にします。
+6. メニューの「原文」で英語、もう一度押すと日本語にします。
 
 ## 共通のコード (サブモジュール)
 
