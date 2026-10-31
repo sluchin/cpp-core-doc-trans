@@ -8,7 +8,7 @@ C++ Core Guidelines (https://isocpp.github.io/CppCoreGuidelines/CppCoreGuideline
 
 ## 仕組み
 
-```
+```text
 章を開く ─> Rust: ガイドラインのページ (全体で 1 つ) を取得 (isocpp.github.io だけ。1 回だけ取得して、覚えておく)
          ─> React: 本文を取り出し、章 (h1) ごとに分ける。開いた章を、段落ごとに分ける
          ─> Rust: 段落 (HTML の断片) を翻訳 (コードには「翻訳しない」印を付ける) ─> キャッシュ
