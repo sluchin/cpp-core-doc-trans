@@ -1,6 +1,6 @@
 # cpp-core-doc-trans
 
-C++ Core Guidelines (https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines 。元はリポジトリ [isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines) の Markdown) を**開いたときに** 取得して、日本語に翻訳して表示するアプリです (事前に翻訳したものはありません)。メニュー (☰) の「原文」で、英語に戻せます。PC (Linux, Windows, macOS) と Android で動きます。
+C++ Core Guidelines (<https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines> 。元はリポジトリ [isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines) の Markdown) を**開いたときに** 取得して、日本語に翻訳して表示するアプリです (事前に翻訳したものはありません)。メニュー (☰) の「原文」で、英語に戻せます。PC (Linux, Windows, macOS) と Android で動きます。
 
 - **Tauri 2** (Rust) + **React** (TypeScript)。
 - 翻訳のサービスは設定で選びます。**Google Cloud Translation** (Basic, v2)、**Gemini API**、**ML Kit** (Android のみ。端末の中で翻訳。オフライン)、**Google 翻訳 (無料)** (キー不要。非公式の入口)。API キーは使う人が自分のものをアプリの設定に入れます。設定が空のときは、ビルドのときの環境変数 (`GOOGLE_CLOUD_TRANSLATION_API_KEY`、`GEMINI_API_KEY`) のキーを使います (自分で使うビルドだけで使い、配るビルドには入れません)。
@@ -55,7 +55,7 @@ docker compose run --rm build-android    # Android のデバッグ版 APK
 ```
 
 - Android の APK: `src-tauri/gen/android/app/build/outputs/apk/universal/debug/app-universal-debug.apk` (arm64)。
-- Windows と macOS はそれぞれの OS で `npm ci && npx tauri build` を実行します (Rust, Node.js, 各 OS の Tauri の前提が要ります。https://tauri.app/start/prerequisites/)。
+- Windows と macOS はそれぞれの OS で `npm ci && npx tauri build` を実行します (Rust, Node.js, 各 OS の Tauri の前提が要ります。<https://tauri.app/start/prerequisites/)。>
 - 画面の確認 (`npm run tauri:dev`) はホストで行います。
 
 ## リリース
@@ -64,4 +64,4 @@ docker compose run --rm build-android    # Android のデバッグ版 APK
 
 ## ライセンス
 
-GPL-3.0-or-later。C++ Core Guidelines は Standard C++ Foundation と貢献者のものです (MIT 形式のライセンス。https://github.com/isocpp/CppCoreGuidelines/blob/master/LICENSE)。このリポジトリにはドキュメントの文章を含めません (実行のときに取得します)。
+GPL-3.0-or-later。C++ Core Guidelines は Standard C++ Foundation と貢献者のものです (MIT 形式のライセンス。<https://github.com/isocpp/CppCoreGuidelines/blob/master/LICENSE)。このリポジトリにはドキュメントの文章を含めません> (実行のときに取得します)。
